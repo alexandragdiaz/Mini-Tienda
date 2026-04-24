@@ -25,10 +25,15 @@ function agregarAlCarrito(nombre, precio) {
   const li = document.createElement('li');
   li.classList.add('list-group-item');
 
-  li.innerHTML = `
-    ${nombre} - $${precio.toLocaleString()}
-    <button class="btn btn-sm btn-danger btn-eliminar">✕</button>
-  `;
+ li.innerHTML = `
+  <div class="d-flex justify-content-between align-items-center">
+    <span>${nombre}</span>
+    <div>
+      <span class="me-3">$${precio.toLocaleString('es-CO')}</span>
+      <button class="btn btn-sm btn-danger btn-eliminar">✕</button>
+    </div>
+  </div>
+`;
 
   lista.appendChild(li);
 

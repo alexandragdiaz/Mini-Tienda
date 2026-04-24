@@ -1,67 +1,128 @@
+/* =========================
+   BASE
+========================= */
 body {
-  background-color: #ffffff;
-  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f8f9fa;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* NAVBAR */
+
+/* =========================
+   NAVBAR
+========================= */
 .navbar {
   border-bottom: 1px solid #eee;
 }
 
-/* CARDS */
+
+/* =========================
+   CARDS PRODUCTO
+========================= */
 .card-producto {
   border: none;
-  border-radius: 0;
-  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  transition: all 0.25s ease;
 }
 
 .card-producto:hover {
-  transform: scale(1.02);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-/* IMAGEN */
 .card-img-top {
-  height: 280px;
+  height: 260px;
+  width: 100%;
   object-fit: cover;
 }
 
-/* TEXTO */
+.card-body {
+  padding: 15px;
+}
+
 .card-title {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 500;
+  margin-bottom: 5px;
 }
 
 .card-text {
-  color: #555;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
 }
 
-/* BOTÓN */
+
+/* =========================
+   BOTÓN AGREGAR
+========================= */
 .btn-agregar {
   background-color: black;
   color: white;
-  border: none;
-  border-radius: 0;
+  border-radius: 8px;
+  padding: 8px;
+  transition: all 0.2s ease;
 }
 
 .btn-agregar:hover {
-  background-color: #333;
+  background-color: #222;
+  transform: scale(1.03);
 }
 
-/* CARRITO */
-#lista-carrito {
-  border-top: 1px solid #eee;
+
+/* =========================
+   CARRITO
+========================= */
+.carrito-lista {
+  max-height: 300px;
+  overflow-y: auto;
 }
 
-#lista-carrito li {
-  border: none;
+.carrito-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10px;
   border-bottom: 1px solid #eee;
-  padding: 10px 0;
 }
 
-/* BOTÓN VACIAR */
+.carrito-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.carrito-nombre {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.carrito-precio {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+
+/* =========================
+   BOTONES CARRITO
+========================= */
+.btn-eliminar {
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #btn-vaciar {
   background-color: black;
   border: none;
-  border-radius: 0;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+#btn-vaciar:hover {
+  background-color: #222;
 }

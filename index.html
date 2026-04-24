@@ -7,134 +7,121 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-light bg-white shadow-sm px-4">
-  <div class="container-fluid d-flex justify-content-between align-items-center">
+<nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+  <div class="container d-flex justify-content-between">
 
-    <span class="navbar-brand fw-bold">Mi Tienda</span>
+    <span class="navbar-brand fw-semibold">SHOPPING</span>
 
-    <!-- CARRITO -->
-    <div class="position-relative">
-      <span style="font-size: 1.5rem;">🛒</span>
-
-      <span id="badge"
-        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
-        0
-      </span>
+    <div class="d-flex align-items-center gap-2">
+      <span style="font-size: 1.4rem;">🛒</span>
+      <span id="badge" class="badge bg-dark rounded-pill">0</span>
     </div>
 
   </div>
 </nav>
 
-<div class="container mt-4">
+<!-- CONTENIDO -->
+<div class="container py-5">
+
+  <h2 class="mb-4 fw-semibold">Nuevas Referencias</h2>
+
   <div class="row">
 
     <!-- PRODUCTO 1 -->
     <div class="col-md-3 mb-4">
-  <div class="card shadow-sm h-100 card-producto">
-
-    <img src="imagen/ref1.jpg"
-         class="card-img-top"
-         alt="producto">
-
-    <div class="card-body text-center">
-      <h5 class="card-title">Referencia 1</h5>
-      <p class="card-text text-success fw-bold">$120.000</p>
-
-      <button class="btn btn-dark w-100 btn-agregar"
-        data-nombre="Collar perro"
-        data-precio="120000">
-        Agregar 🛒
-      </button>
+      <div class="card shadow-sm h-100 card-producto">
+        <img src="imagen/ref1.jpg" class="card-img-top" alt="producto">
+        <div class="card-body text-center">
+          <h5 class="card-title">Referencia 1</h5>
+          <p class="card-text text-success fw-bold">$120.000</p>
+          <button class="btn btn-dark w-100 btn-agregar"
+            data-nombre="Collar perro"
+            data-precio="120000">
+            Agregar 🛒
+          </button>
+        </div>
+      </div>
     </div>
-
-  </div>
-</div>
 
     <!-- PRODUCTO 2 -->
     <div class="col-md-3 mb-4">
-  <div class="card shadow-sm h-100 card-producto">
-
-    <img src="imagen/ref2.jpg"
-         class="card-img-top"
-         alt="producto">
-
-    <div class="card-body text-center">
-      <h5 class="card-title">Referencia 2</h5>
-      <p class="card-text text-success fw-bold">$150.000</p>
-
-      <button class="btn btn-dark w-100 btn-agregar"
-        data-nombre="Referencia 2"
-        data-precio="150000">
-        Agregar 🛒
-      </button>
+      <div class="card shadow-sm h-100 card-producto">
+        <img src="imagen/ref2.jpg" class="card-img-top" alt="producto">
+        <div class="card-body text-center">
+          <h5 class="card-title">Referencia 2</h5>
+          <p class="card-text text-success fw-bold">$150.000</p>
+          <button class="btn btn-dark w-100 btn-agregar"
+            data-nombre="Referencia 2"
+            data-precio="150000">
+            Agregar 🛒
+          </button>
+        </div>
+      </div>
     </div>
-
-  </div>
-</div>
 
     <!-- PRODUCTO 3 -->
     <div class="col-md-3 mb-4">
-  <div class="card shadow-sm h-100 card-producto">
-
-    <img src="imagen/ref3.jpg"
-         class="card-img-top"
-         alt="producto">
-
-    <div class="card-body text-center">
-      <h5 class="card-title">Referencia 3</h5>
-      <p class="card-text text-success fw-bold">$140.000</p>
-
-      <button class="btn btn-dark w-100 btn-agregar"
-        data-nombre="Referencia 3"
-        data-precio="140000">
-        Agregar 🛒
-      </button>
+      <div class="card shadow-sm h-100 card-producto">
+        <img src="imagen/ref3.jpg" class="card-img-top" alt="producto">
+        <div class="card-body text-center">
+          <h5 class="card-title">Referencia 3</h5>
+          <p class="card-text text-success fw-bold">$140.000</p>
+          <button class="btn btn-dark w-100 btn-agregar"
+            data-nombre="Referencia 3"
+            data-precio="140000">
+            Agregar 🛒
+          </button>
+        </div>
+      </div>
     </div>
-
-  </div>
-</div>
 
     <!-- PRODUCTO 4 -->
     <div class="col-md-3 mb-4">
-  <div class="card shadow-sm h-100 card-producto">
-
-    <img src="imagen/ref4.jpg"
-         class="card-img-top"
-         alt="producto">
-
-    <div class="card-body text-center">
-      <h5 class="card-title">Referencia 4</h5>
-      <p class="card-text text-success fw-bold">$160.000</p>
-
-      <button class="btn btn-dark w-100 btn-agregar"
-        data-nombre="Referencia 4"
-        data-precio="160000">
-        Agregar 🛒
-      </button>
+      <div class="card shadow-sm h-100 card-producto">
+        <img src="imagen/ref4.jpg" class="card-img-top" alt="producto">
+        <div class="card-body text-center">
+          <h5 class="card-title">Referencia 4</h5>
+          <p class="card-text text-success fw-bold">$160.000</p>
+          <button class="btn btn-dark w-100 btn-agregar"
+            data-nombre="Referencia 4"
+            data-precio="160000">
+            Agregar 🛒
+          </button>
+        </div>
+      </div>
     </div>
-
-  </div>
-</div>
 
   </div>
 
   <!-- CARRITO -->
   <div class="mt-5 p-4 bg-white rounded shadow-sm">
-    <h3>Carrito 🛒</h3>
 
-    <ul id="lista-carrito" class="list-group mb-3">
-      <li id="msg-vacio">Tu carrito está vacío</li>
+    <h3 class="mb-3">Carrito 🛒</h3>
+
+    <ul id="lista-carrito" class="list-group mb-3 carrito-lista">
+      <li id="msg-vacio" class="text-muted text-center py-3">
+        Tu carrito está vacío
+      </li>
     </ul>
 
-    <h4>Total: <span id="total">$0</span></h4>
+    <h4 class="mb-3">Total: <span id="total">$0</span></h4>
 
-    <button id="btn-vaciar" class="btn btn-danger mt-2">Vaciar carrito</button>
+    <button id="btn-vaciar" class="btn btn-dark w-100">
+      Vaciar carrito
+    </button>
+
   </div>
+
 </div>
 
 <script src="app.js"></script>
